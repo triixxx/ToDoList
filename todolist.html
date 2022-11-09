@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #menu{
+            background-color: #d24d55;
+            color:black;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+        }
+        body{
+            margin-left: 20px; 
+            background-color: pink; }
+
+        h2{
+            color: wheat;
+            font-family: Verdana, Geneva, Tahoma, sans-serif ; } 
+        h3{
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: solid #ffc404 2px;
+            display: block;
+
+
+        }
+        #texto{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+         }
+
+        #botao{
+            background-color: #d24d55;
+            color: black;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px; }     
+    </style>
+</head>
+<body>   
+    <center><h1>Lista de Tarefas</h1></center>
+    <div id="menu">
+    <ul>
+        <a href="cadastro.html" target="_blank">Cadastro</a>
+        <li> Tarefas</li>
+    </ul>
+   </div>
+ 
+    <center><h2>Digite aqui</h2>
+    <input id="texto" placeholder="Escreva">
+    <button onclick="adicionar();" id="botao">Adicionar</button></center>
+    <script>
+
+        function adicionar()
+        {
+            const conteudo = document.getElementById('texto').value;
+            const novaH3 = document.createElement('h3');
+            const novoBotao = document.createElement('button');
+            novoBotao.innerHTML = "Excluir";
+            
+            novaH3.innerHTML = conteudo;
+            
+            novaH3.addEventListener('click',function(){
+                novaH3.style.color = "pink";
+                novaH3.style.textDecoration = "line-through";
+            })
+            
+            novoBotao.addEventListener('click',function(){
+                novaH3.remove();
+                novoBotao.remove();
+            })
+
+            document.body.appendChild(novaH3);
+            document.body.appendChild(novoBotao);
+            document.getElementById('texto').value = "";
+            //window.alert(conteudo);
+        } 
+    </script>
+</body>
+</html>
