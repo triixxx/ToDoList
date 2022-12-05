@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em andamento</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        img{
+   width: 15px;
+   height: 15px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient();
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cadastre-se aqui</h1>
+        </div>
+        <form id="form" class="form" action="trix.html">
+        <div class="form-control">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome">
+            <i><img src="./botaoyes.png"></i>
+            <i><img src="./botaoerror.png"></i>
+            <small>Mensagem de erro</small>
+        </div>  
+
+        <div class="form-control">
+            <label for="login">Nome de Usuário</label>
+            <input type="text" id="login"placeholder="Crie um nome de usuário">
+            <i><img src="./botaoyes.png"></i>
+            <i><img src="./botaoerror.png"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email"placeholder="Digite seu E-mail">
+            <i><img src="./botaoyes.png"></i>
+            <i><img src="./botaoerror.png"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Senha</label>
+            <input type="text" id="password"placeholder="Crie uma senha">
+            <i><img src="./botaoyes.png"></i>
+            <i><img src="./botaoerror.png"></i>
+            <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+            <label for="passconfirmation">Confirmação de Senha</label>
+            <input type="text" id="passconfirmation"placeholder="Confirme sua senha">
+            <i><img src="./botaoyes.png"></i>
+            <i><img src="./botaoerror.png"></i>
+            <small>Mensagem de erro</small>
+        </div>
+            <button type="submit">Enviar</button>     
+        
+    
+     
+        </form>
+    </div>
+    <script>
+    </script>
+    
+</body>
+</html>
